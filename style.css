@@ -48,14 +48,46 @@ body {
     margin-bottom: 12px;
     color: #1e3b5c;
 }
-.ai-box { background: #eef5ff; border-radius: 20px; padding: 14px; }
+.ai-box {
+    background: #eef5ff;
+    border-radius: 20px;
+    padding: 14px;
+}
 .ai-info-row {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
     align-items: center;
 }
-.ai-info-row .fas.fa-bus { font-size: 1.8rem; }
+.ai-info-row .fas.fa-bus {
+    font-size: 1.8rem;
+}
+.ai-tags-row {
+    margin-top: 12px;
+}
+.transport-row {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+}
+.live-map-note {
+    background:#eef2fa;
+    border-radius: 18px;
+    padding: 10px;
+    text-align: center;
+    font-size:0.8rem;
+}
+.payment-note {
+    background:#eef2fa;
+    border-radius: 18px;
+    padding: 10px;
+    margin-top: 12px;
+}
+.page-tip {
+    text-align: center;
+    font-size: 0.65rem;
+    color:#5a7390;
+}
 .eta {
     background: #1f6392;
     color: white;
@@ -75,10 +107,11 @@ body {
     gap: 6px;
     margin: 4px;
 }
-.ai-tags-row {
-    margin-top: 12px;
+.transport-row {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
 }
-.transport-row { display: flex; gap: 10px; margin: 12px 0; }
 .transport-btn {
     flex: 1;
     background: #eef2f8;
@@ -87,20 +120,9 @@ body {
     border-radius: 40px;
     font-weight: 600;
     cursor: pointer;
+    transition: 0.2s;
 }
-.live-map-note, .payment-note {
-    background:#eef2fa;
-    border-radius: 18px;
-    padding: 10px;
-    text-align: center;
-    font-size:0.8rem;
-}
-.tag-row { margin-bottom: 12px; }
-.page-tip {
-    text-align: center;
-    font-size: 0.65rem;
-    color:#5a7390;
-}
+.transport-btn:active { background: #d0ddea; }
 .bottom-nav {
     display: flex;
     justify-content: space-around;
@@ -131,8 +153,8 @@ body {
     font-size: 1.6rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     cursor: pointer;
-    animation: pulse 1.8s infinite;
     z-index: 100;
+    animation: pulse 1.8s infinite;
 }
 @keyframes pulse {
     0% { transform: scale(1); box-shadow: 0 0 0 0 #1f639280; }

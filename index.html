@@ -33,40 +33,43 @@
                     <span class="tag"><i class="fas fa-solar-panel"></i> Eco-Shine ready</span>
                 </div>
             </div>
-            <div class="ai-note"><i class="fas fa-chart-line"></i> GPS + demand + traffic = real-time AI</div>
+            <div style="font-size: 0.7rem; margin-top: 8px;"><i class="fas fa-chart-line"></i> GPS + demand + traffic = real-time AI</div>
         </div>
 
-        <!-- Transport -->
+        <!-- Smart Transport -->
         <div class="card">
             <div class="card-title"><i class="fas fa-bus-simple"></i> Smart Transport</div>
             <div class="transport-row">
-                <button class="transport-btn"><i class="fas fa-motorcycle"></i> Bajaj</button>
-                <button class="transport-btn"><i class="fas fa-car"></i> Taxi</button>
-                <button class="transport-btn"><i class="fas fa-bus"></i> Minibus</button>
+                <button class="transport-btn" data-type="Bajaj"><i class="fas fa-motorcycle"></i> Bajaj</button>
+                <button class="transport-btn" data-type="Taxi"><i class="fas fa-car"></i> Taxi</button>
+                <button class="transport-btn" data-type="Minibus"><i class="fas fa-bus"></i> Minibus</button>
             </div>
-            <div class="live-map-note"><i class="fas fa-map-marker-alt"></i> Live map: Piassa · Hawassa Uni · Lake Hawassa</div>
+            <div class="live-map-note">
+                <i class="fas fa-map-marker-alt"></i> Live map: Piassa · Hawassa Uni · Lake Hawassa
+            </div>
         </div>
 
         <!-- Food & Eco-Shine -->
         <div class="card">
             <div class="card-title"><i class="fas fa-utensils"></i> Food & Eco-Shine</div>
-            <div class="tag-row">
+            <div>
                 <span class="tag"><i class="fas fa-hotel"></i> Haile Resort</span>
                 <span class="tag"><i class="fas fa-hotel"></i> Lewi Hotel</span>
                 <span class="tag"><i class="fas fa-bicycle"></i> Bike delivery</span>
                 <span class="tag"><i class="fas fa-solar-panel"></i> Solar Shoe-Shine</span>
             </div>
-            <div class="payment-note"><i class="fas fa-qrcode"></i> Payment: Telebirr · CBE · Chapa | QR receipt</div>
+            <div class="payment-note">
+                <i class="fas fa-qrcode"></i> Payment: Telebirr · CBE · Chapa | QR receipt
+            </div>
         </div>
-
         <div class="page-tip">✨ AI assistant: transport, food, payments & Eco-Shine</div>
     </div>
     <div class="bottom-nav">
-        <div class="nav-item active"><i class="fas fa-home"></i> Home</div>
-        <div class="nav-item"><i class="fas fa-bus"></i> Transport</div>
-        <div class="nav-item"><i class="fas fa-utensils"></i> Food</div>
-        <div class="nav-item"><i class="fas fa-solar-panel"></i> Eco-Shine</div>
-        <div class="nav-item"><i class="fas fa-chart-simple"></i> Admin</div>
+        <div class="nav-item active" data-section="home"><i class="fas fa-home"></i> Home</div>
+        <div class="nav-item" data-section="transport"><i class="fas fa-bus"></i> Transport</div>
+        <div class="nav-item" data-section="food"><i class="fas fa-utensils"></i> Food</div>
+        <div class="nav-item" data-section="ecoshine"><i class="fas fa-solar-panel"></i> Eco-Shine</div>
+        <div class="nav-item" data-section="admin"><i class="fas fa-chart-simple"></i> Admin</div>
     </div>
 </div>
 <div class="mic-fab" id="micBtn">
