@@ -1,32 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Zemenaw Gozo AI</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Zemenaw Gozo AI | Hawassa Super App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="app-container">
+    <div class="header">
+        <h1><i class="fas fa-city"></i> Zemenaw Gozo AI</h1>
+        <p>Hawassa Super App · ዘመናዊ ጎዞ AI</p>
+        <div class="lang-badge"><i class="fas fa-microphone"></i> Amharic | Sidamic | English</div>
+    </div>
+    <div class="content">
+        <!-- AI Smart System -->
+        <div class="card">
+            <div class="card-title"><i class="fas fa-brain"></i> AI Smart System</div>
+            <div class="ai-box">
+                <div class="ai-info-row">
+                    <i class="fas fa-bus"></i>
+                    <span>Arrives in</span>
+                    <span class="eta" id="liveMinutes">3</span>
+                    <span>min</span>
+                    <span class="tag"><i class="fas fa-road"></i> light traffic</span>
+                </div>
+                <div class="ai-tags-row">
+                    <span class="tag"><i class="fas fa-users"></i> Crowd: Medium</span>
+                    <span class="tag"><i class="fas fa-leaf"></i> Best: Minibus (15 Br)</span>
+                    <span class="tag"><i class="fas fa-solar-panel"></i> Eco-Shine ready</span>
+                </div>
+            </div>
+            <div class="ai-note"><i class="fas fa-chart-line"></i> GPS + demand + traffic = real-time AI</div>
+        </div>
 
-  <header>
-    <h1>Zemenaw Gozo AI</h1>
-    <p>Smart Urban Mobility System</p>
-  </header>
+        <!-- Transport -->
+        <div class="card">
+            <div class="card-title"><i class="fas fa-bus-simple"></i> Smart Transport</div>
+            <div class="transport-row">
+                <button class="transport-btn"><i class="fas fa-motorcycle"></i> Bajaj</button>
+                <button class="transport-btn"><i class="fas fa-car"></i> Taxi</button>
+                <button class="transport-btn"><i class="fas fa-bus"></i> Minibus</button>
+            </div>
+            <div class="live-map-note"><i class="fas fa-map-marker-alt"></i> Live map: Piassa · Hawassa Uni · Lake Hawassa</div>
+        </div>
 
-  <section>
-    <h2>Features</h2>
-    <ul>
-      <li>Real-time Tracking</li>
-      <li>AI Arrival Prediction</li>
-      <li>Smart Bus Stops</li>
-      <li>Tourist Mode</li>
-    </ul>
-  </section>
+        <!-- Food & Eco-Shine -->
+        <div class="card">
+            <div class="card-title"><i class="fas fa-utensils"></i> Food & Eco-Shine</div>
+            <div class="tag-row">
+                <span class="tag"><i class="fas fa-hotel"></i> Haile Resort</span>
+                <span class="tag"><i class="fas fa-hotel"></i> Lewi Hotel</span>
+                <span class="tag"><i class="fas fa-bicycle"></i> Bike delivery</span>
+                <span class="tag"><i class="fas fa-solar-panel"></i> Solar Shoe-Shine</span>
+            </div>
+            <div class="payment-note"><i class="fas fa-qrcode"></i> Payment: Telebirr · CBE · Chapa | QR receipt</div>
+        </div>
 
-  <section>
-    <h2>Map (Demo)</h2>
-    <div id="map">Map will appear here</div>
-  </section>
-
-  <script src="script.js"></script>
+        <div class="page-tip">✨ AI assistant: transport, food, payments & Eco-Shine</div>
+    </div>
+    <div class="bottom-nav">
+        <div class="nav-item active"><i class="fas fa-home"></i> Home</div>
+        <div class="nav-item"><i class="fas fa-bus"></i> Transport</div>
+        <div class="nav-item"><i class="fas fa-utensils"></i> Food</div>
+        <div class="nav-item"><i class="fas fa-solar-panel"></i> Eco-Shine</div>
+        <div class="nav-item"><i class="fas fa-chart-simple"></i> Admin</div>
+    </div>
+</div>
+<div class="mic-fab" id="micBtn">
+    <i class="fas fa-microphone"></i>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
